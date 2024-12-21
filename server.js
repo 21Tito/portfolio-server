@@ -11,10 +11,9 @@ const User = require('./models/User');
 
 // Middleware
 app.use(cors({
-    origin: 'https://21tito.github.io',
+    origin: '*',  // Allow all origins temporarily for testing
     methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
 
