@@ -13,7 +13,8 @@ const User = require('./models/User');
 app.use(cors({
     origin: 'https://21tito.github.io',
     methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
 }));
 app.use(express.json());
 
